@@ -2,34 +2,36 @@
 export type Testimonial = {
   id: string;
   name: string;
-  role: string; // position / company
+  role: string;
   feedback: string;
-  avatar?: string; // optional image
+  avatar?: string;
 };
 
+// src/data/testimonials.ts
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "John Doe",
-    role: "Team Lead at YegnaFuture",
+    name: "Mulatu K.",
+    role: "Co-Founder – YegnaFuture",
     feedback:
-      "Hanna consistently delivered high-quality work, demonstrating both technical expertise and strong problem-solving skills. She is a natural leader and a reliable team player.",
-    avatar: "/images/testimonials/john_doe.jpg",
+      "Bemnet played a key role in YegnaFuture. She moves fast, understands user needs, and turns ideas into polished products. Beyond coding, she brings strategy and structure to the team.",
+    avatar: undefined,
   },
   {
     id: "2",
-    name: "Sara Ahmed",
-    role: "Product Manager",
+    name: "Bekele D.",
+    role: "CEO - Jirtuu Software Labs",
     feedback:
-      "Working with Hanna on the Inventory Management System was an absolute pleasure. She is proactive, communicates clearly, and always goes the extra mile.",
-    avatar: "/images/testimonials/sara_ahmed.jpg",
+      "Bemnet excelled as a Full-Stack Developer during her internship. She showed dedication, eagerness to learn, and consistently contributed to the team’s goals.",
+    avatar: undefined,
   },
   {
     id: "3",
-    name: "Michael T.",
-    role: "Client for Real Estate Project",
+    name: "Fasika T.",
+    role: "Team Leader – Brighter Generation",
     feedback:
-      "Hanna transformed our ideas into a functional, beautiful platform quickly. She is highly professional and very easy to collaborate with.",
-    avatar: "/images/testimonials/michael_t.jpg",
+      "Bemnet coordinated effectively between students, instructors, and team leaders. Her communication, proactivity, and adaptability made the program smooth, while she grew both technically and professionally.",
+    avatar: undefined,
   },
 ];
+

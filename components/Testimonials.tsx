@@ -7,7 +7,7 @@ import { testimonials, Testimonial } from "@/data/testimonials";
 
 export default function Testimonials() {
   return (
-    <SectionWrapper id="testimonials" className="bg-neutral-50 dark:bg-neutral-900">
+    <SectionWrapper id="testimonials" className="bg-linear-to-br from-blue-100 to-blue-50/30">
       <Container>
         <SectionHeading
           title="Testimonials"

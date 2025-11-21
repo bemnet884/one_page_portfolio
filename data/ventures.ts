@@ -1,8 +1,9 @@
 // src/data/ventures.ts
+
 export type Venture = {
   id: string;
   title: string;
-  stage: string; // Idea, Prototype, Live
+  stage: string; // Idea, Prototype, Pilot, Live
   description: string;
   role: string;
   ask: string; // e.g., Looking for partners, funding
@@ -17,36 +18,44 @@ export const ventures: Venture[] = [
     title: "YegnaFuture",
     stage: "Pilot",
     description:
-      "A platform helping students discover scholarships, universities, and career pathways with tailored guidance.",
-    role: "Founder & Developer",
-    ask: "Partners for marketing & operations; seed funding for student outreach.",
-    tags: ["EdTech", "Social Impact", "Founder", "Open to Partners"],
-    metrics: ["50,000 ADA allocated", "Pilot modules ready"],
-    website: "https://yegnafuture.com",
+      "An AI-powered platform helping students discover scholarships, universities, and career pathways through personalized recommendations. Built by a team of 4 (Founder/Developer, AI Engineer, Backend Engineer, Marketing Lead). Currently in incubation under the Ethiopian Artificial Intelligence Institute.",
+    role: "Founder & Full-Stack Developer",
+    ask: "Seeking strategic partners for scaling, student outreach, and early seed funding.",
+    tags: [
+      "EdTech",
+      "AI",
+      "Career Guidance",
+      "Founder",
+      "Incubation",
+      "Open to Partners",
+    ],
+    metrics: [
+      "Incubated at Ethiopian AI Institute",
+      "Early pilot modules in development",
+      "Initial user research completed",
+    ],
+    website: undefined,
   },
+
   {
     id: "hannas_solutions",
     title: "Hanna’s Solutions",
-    stage: "Idea → Pre-prototype",
+    stage: "Idea → Pre-Prototype",
     description:
-      "Multi-sector innovation lab creating tech & non-tech solutions for education, environment, and local business challenges.",
-    role: "Founder",
-    ask: "Technical co-founder, business mentor, early collaborators.",
-    tags: ["Innovation", "R&D", "Founder", "Open to Partners"],
-    metrics: [
-      "Multiple sector project ideas ready",
-      "Vision for scalable solutions",
+      "A parent company and innovation lab building multi-sector solutions across education, agriculture, environmental sustainability, mining support tools, reverse vending technology, and Christian/Bible-based gamified learning experiences.",
+    role: "Founder & Vision Lead",
+    ask: "Looking for a technical co-founder, subject-matter collaborators, and business mentorship.",
+    tags: [
+      "Innovation",
+      "Multi-Sector",
+      "R&D",
+      "Founder",
+      "Open to Partners",
+      "Future Company",
     ],
-  },
-  {
-    id: "art_culture_preservation",
-    title: "Art & Culture Preservation",
-    stage: "Prototype",
-    description:
-      "Digitizing cultural artifacts using NFTs to allow communities to showcase and monetize their heritage.",
-    role: "Founder & Developer",
-    ask: "Partners with domain expertise and marketing support.",
-    tags: ["NFT", "Cultural Tech", "Founder", "Open to Partners"],
-    metrics: ["Prototype ready", "Pilot NFT collections designed"],
+    metrics: [
+      "Portfolio of validated concepts across 5+ sectors",
+      "Roadmap prepared for first 3 prototype builds",
+    ],
   },
 ];

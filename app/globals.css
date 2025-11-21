@@ -123,3 +123,24 @@ html {
   }
 }
 
+@keyframes border-beam {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(200%) rotate(45deg);
+  }
+}
+
+.animate-border-beam {
+  animation: border-beam 2s linear infinite;
+}
+
+@layer utilities {
+  .line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+}
